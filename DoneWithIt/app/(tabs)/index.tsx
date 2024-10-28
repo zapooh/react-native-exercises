@@ -26,13 +26,14 @@ export default function HomeScreen() {
         flexDirection: "row",
         justifyContent: "center",
         alignItems: "center",
+        alignContent: "center",
       }}
     >
       <View
         style={{
           backgroundColor: "dodgerblue",
           width: 100,
-          height: 300,
+          height: 100,
         }}
       />
 
@@ -40,7 +41,10 @@ export default function HomeScreen() {
         style={{
           backgroundColor: "gold",
           width: 100,
-          height: 200,
+          height: 100,
+          top: 20,
+          left: 20,
+          position: "absolute",
         }}
       />
 
