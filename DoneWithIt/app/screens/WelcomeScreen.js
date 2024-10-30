@@ -1,5 +1,6 @@
 import React from "react";
 import { Image, ImageBackground, StyleSheet, Text, View } from "react-native";
+import AppButton from "../components/AppButton";
 
 
 function WelcomeScreen(props) {
@@ -19,7 +20,7 @@ function WelcomeScreen(props) {
         <Image style={styles.logo} source={require("/Users/hjem/Documents/GitHub/exercises1/DoneWithIt/assets/images/logo-red.png")} />
         <Text>Sell What You Don't Need</Text>
       </View>
-      <View style={styles.loginButton}></View>
+      <AppButton title={"Login"}/>
       <View style={styles.registerButton}></View>
     </ImageBackground>
   );
@@ -31,11 +32,6 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: "flex-end",
     alignItems: "center",
-  },
-  loginButton: {
-    width: '100%',
-    height: 70,
-    backgroundColor: "#fc5c65",
   },
   registerButton: {
     width: '100%',
